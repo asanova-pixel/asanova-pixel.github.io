@@ -1,0 +1,137 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Colors */
+:root {
+  --primary: #00296b;
+  --secondary: #D26900;
+  --tertiary: #535393;
+}
+
+/* Full Page Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between header, content, footer */
+  align-items: center;
+  height: 100vh; /* Ensures the whole layout fits in one screen */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: var(--primary);
+}
+
+.header .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--primary);
+}
+
+/* Main Section */
+main {
+  flex: 1; /* Ensures content fills available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Welcome Section */
+.welcome-section {
+  max-width: 600px;
+  text-align: center;
+}
+
+.welcome-section .text-content {
+  text-align: justify;
+  max-width: 600px; /* Restricts text width */
+  margin: 0 auto; /* Centers text */
+}
+
+.welcome-section h2 {
+  color: var(--tertiary);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  text-align: justify;
+  color: var(--primary);
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-content figure {
+  max-width: 600px; /* Restricts the image size */
+  margin: 0 auto; /* Centers the figure */
+  text-align: center;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Restricts the max image width */
+  display: block;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.image-content figcaption {
+  font-size: 1em;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: var(--primary);
+  width: 100%;
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+.footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  /* margin-top: 10px; */
+  display: inline-block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
